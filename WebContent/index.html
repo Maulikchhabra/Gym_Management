@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Pump House</title>
+<link rel="stylesheet"  type="text/css" href="css/index.css" />
+
+<script>
+    function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+  }
+  function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+  }
+</script>
+
+</head>
+<body onload="startTime()">
+    
+   <div class="heading"> 
+     <h1>PUMP HOUSE</h1>
+   </div>
+
+   <img src="images/gym.svg" alt="gym" id="gym">
+   <img src="images/woman.svg" alt="woman" id="woman">
+
+   <div class="clock">
+      <br><br>
+      <div id="txt"></div>
+
+      <a href="login.jsp"><button id="login">LOGIN</button></a>
+      <a href="register.jsp"><button id="register">REGISTER</button></a>
+   </div>
+   
+   
+
+</body>
+</html>

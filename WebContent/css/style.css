@@ -1,0 +1,30 @@
+body{
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-size: cover;
+	
+}
+
+.heading{
+	text-align:center;
+	background-color: #2f3136;
+	color:white;
+	top:0px;
+	position:center;
+	
+}
+
+.entry-box{
+	background-color: #9c9d80;
+	border: 5px solid grey;
+	margin: auto;
+	margin-top:200px;
+	width: 600px;
+	text-align:center;
+	padding: 10px;
+	border-radius: 50px;
+}
+
+.register{
+	
+}

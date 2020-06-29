@@ -1,0 +1,62 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background-color: tomato;
+}
+
+#begin{
+    height: 650px;
+    width: 700px;
+    float: right;
+    margin-top: 30px;
+}
+
+.dropdown1{
+    position: relative;
+    display: inline-block;
+}
+
+.btn-group button {
+    background-color: rgb(56, 53, 53); /* Green background */
+    /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 300px; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+#btn1{margin-top: 150px;}
+
+.drop-content{
+    margin-top: 20px;
+}
+
+#drop-content a{
+    display: block;
+    font-size: large;
+    background: #dfdfdf;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 36px;
+    margin-top: 2px;
+}
+
+.drops{
+    background-color: #282b28;
+    padding:30px;
+    margin-top: -300px;
+    margin-left: 450px;
+    color:white;
+    text-align: center;
+    border-style: dashed;
+    border-radius: 10px;
+    width:280px;
+}
+

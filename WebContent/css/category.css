@@ -1,0 +1,78 @@
+body{
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+h2{margin-top:5px;}
+
+.category{
+	background-color: #9c9d80;
+	border: 5px solid grey;
+	margin: auto;
+	margin-top:200px;
+	width: 600px;
+	text-align:center;
+	padding: 50px;
+	border-radius: 50px;
+	height: 270px;
+}
+
+#card1 {
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 150px;
+    height:175px;
+    margin-left: 5px;
+    margin-top: 10px;
+    background-color: burlywood;
+    border:7px solid black;
+    border-radius: 20px;
+}
+
+#card2 {
+    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 150px;
+    height:175px;
+    margin-left: 220px;
+    margin-top: 30px;
+    background-color: burlywood;
+    border:7px solid black;
+    border-radius: 20px;
+}
+
+#card3 {
+    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 150px;
+    height:180px;
+    margin-left: 435px;
+    margin-top: -190px;
+    background-color: burlywood;
+    border:7px solid black;
+    border-radius: 20px;
+}
+
+#beginner{
+	height:90px;
+	width:90px;
+	margin-top:35px;
+}
+
+#intermediate{
+	height:90px;
+	width:100px;
+	margin-top:35px;
+}
+
+#advance{
+	height:100px;
+	width:100px;
+	float:right;
+	margin-top:35px;
+}
