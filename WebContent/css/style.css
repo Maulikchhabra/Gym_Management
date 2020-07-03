@@ -1,17 +1,18 @@
 body{
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-    background-size: cover;
-	
+    margin:0px;
+	padding:0px;
 }
 
 .heading{
+	background-color:#d2cdcd;
+	height:55px;
 	text-align:center;
-	background-color: #2f3136;
-	color:white;
-	top:0px;
-	position:center;
-	
+    font-family: "Impact, Charcoal, sans-serif";	
+}
+
+h1{
+	font-size:30px;
+	padding: 12px;
 }
 
 .entry-box{
@@ -25,6 +26,17 @@ body{
 	border-radius: 50px;
 }
 
-.register{
-	
+.proceed{
+	background-color: #9c9d80;
+	border: 5px solid grey;
+	margin-left:500px;
+	margin-top:200px;
+	width: 600px;
+	text-align:center;
+	padding: 10px;
+	border-radius: 50px;
+}
+
+.proceedbtn{
+	width:200px;
 }
