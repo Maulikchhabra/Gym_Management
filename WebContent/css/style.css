@@ -1,6 +1,13 @@
+*{
+	margin:0;
+	padding:0;
+}
+
 body{
-    margin:0px;
-	padding:0px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-size: 100% 100%;
+	background-position: center;
 }
 
 .heading{
@@ -34,9 +41,28 @@ h1{
 	width: 600px;
 	text-align:center;
 	padding: 10px;
-	border-radius: 50px;
+	border-radius: 20px;
+	height:400px;
 }
 
 .proceedbtn{
-	width:200px;
+	width:100px;
+	padding:7px;
+}
+
+.register{
+	background-color: #9c9d80;
+	border: 5px solid grey;
+	margin-left:500px;
+	margin-top:200px;
+	width: 600px;
+	text-align:center;
+	padding: 10px;
+	border-radius: 20px;
+	height:400px;
+}
+
+.proceedbtn2{
+	width:150px;
+	padding:7px;
 }

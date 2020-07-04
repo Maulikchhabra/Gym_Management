@@ -24,7 +24,7 @@
       
     <div class="entry-box">
       
-       <form action="register.jsp"  method="post">
+       <form action="registerDB.jsp"  method="post">
        
          <p>Enter your name :</p>
          <input type="text" name="username">
@@ -37,47 +37,6 @@
        </form>  
      </div>
      
-   <%! //DECLARATION TAG
-   
-     Connection con =null;     
-     PreparedStatement pst =null;
-     Statement st =null;
-     ResultSet rs = null;
-   
-     //Login to database details   
-     String url ="jdbc:mysql://localhost:3306/pumphouse";
-     String uname="root";
-     String pass="3780";
-
-    //SQL Queries to be implemented
-    String query="insert into users values(?,?,?)"; //insert values
-            
-  %>
   
-  <%
-   //getting parameters 
-   String username = request.getParameter("username"); 
-   String password = request.getParameter("password");
-   String email = request.getParameter("email");
-   
-   System.out.println(username +" "+password+" "+email);
-  
-   /*
-   //Initializations =
-  
-   //1.General initializations
-   Class.forName("com.mysql.jdbc.Driver"); //class forname
-   con = DriverManager.getConnection(url, uname, pass);
-  
-   //Query initializations
-   pst = con.prepareStatement(query);
-   pst.setString(1, username);
-   pst.setString(2, password);
-   pst.setString(3,email);
-   pst.executeUpdate();
-  */
-  %>
-
-
 </body>
 </html>
