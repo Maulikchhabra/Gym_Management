@@ -3,7 +3,10 @@ function showCardio(){
     var a1=document.getElementById("drop-content2");
     var a2=document.getElementById("drop-content3");
     var a3=document.getElementById("drop-content4");
-    if(a1.style.display==="none" && a2.style.display==="none" && a3.style.display==="none"){
+    var a4=document.getElementById("drop-content5");
+    var a5=document.getElementById("drop-content6");
+    var a6=document.getElementById("drop-content7");
+    if(a1.style.display==="none" && a2.style.display==="none" && a3.style.display==="none" && a4.style.display==="none" && a5.style.display==="none" && a6.style.display==="none"){
         if(click.style.display==="none"){
             click.style.display="block";
         }
@@ -16,7 +19,10 @@ function showShoulder(){
     var a1=document.getElementById("drop-content1");
     var a2=document.getElementById("drop-content3");
     var a3=document.getElementById("drop-content4");
-    if(a1.style.display==="none" && a2.style.display==="none" && a3.style.display==="none"){
+    var a4=document.getElementById("drop-content5");
+    var a5=document.getElementById("drop-content6");
+    var a6=document.getElementById("drop-content7");
+    if(a1.style.display==="none" && a2.style.display==="none" && a3.style.display==="none" && a4.style.display==="none" && a5.style.display==="none" && a6.style.display==="none"){
         if(click.style.display==="none"){
             click.style.display="block";
         }
@@ -26,10 +32,13 @@ function showShoulder(){
     
 function showChest(){
     var click=document.getElementById("drop-content3");
-    var a1=document.getElementById("drop-content2");
-    var a2=document.getElementById("drop-content1");
+    var a1=document.getElementById("drop-content1");
+    var a2=document.getElementById("drop-content2");
     var a3=document.getElementById("drop-content4");
-    if(a1.style.display==="none" && a2.style.display==="none" && a3.style.display==="none"){
+    var a4=document.getElementById("drop-content5");
+    var a5=document.getElementById("drop-content6");
+    var a6=document.getElementById("drop-content7");
+    if(a1.style.display==="none" && a2.style.display==="none" && a3.style.display==="none" && a4.style.display==="none" && a5.style.display==="none" && a6.style.display==="none"){
         if(click.style.display==="none"){
             click.style.display="block";
         }
@@ -39,10 +48,13 @@ function showChest(){
     
 function showBiceps(){
     var click=document.getElementById("drop-content4");
-    var a1=document.getElementById("drop-content2");
-    var a2=document.getElementById("drop-content3");
-    var a3=document.getElementById("drop-content1");
-    if(a1.style.display==="none" && a2.style.display==="none" && a3.style.display==="none"){
+    var a1=document.getElementById("drop-content1");
+    var a2=document.getElementById("drop-content2");
+    var a3=document.getElementById("drop-content3");
+    var a4=document.getElementById("drop-content5");
+    var a5=document.getElementById("drop-content6");
+    var a6=document.getElementById("drop-content7");
+    if(a1.style.display==="none" && a2.style.display==="none" && a3.style.display==="none" && a4.style.display==="none" && a5.style.display==="none" && a6.style.display==="none"){
         if(click.style.display==="none"){
             click.style.display="block";
         }
@@ -52,11 +64,13 @@ function showBiceps(){
     
 function showTriceps(){
     var click=document.getElementById("drop-content5");
-    var a1=document.getElementById("drop-content2");
-    var a2=document.getElementById("drop-content3");
-    var a3=document.getElementById("drop-content1");
+    var a1=document.getElementById("drop-content1");
+    var a2=document.getElementById("drop-content2");
+    var a3=document.getElementById("drop-content3");
     var a4=document.getElementById("drop-content4");
-    if(a1.style.display==="none" && a2.style.display==="none" && a3.style.display==="none" && a4.style.display==="none"){
+    var a5=document.getElementById("drop-content6");
+    var a6=document.getElementById("drop-content7");
+    if(a1.style.display==="none" && a2.style.display==="none" && a3.style.display==="none" && a4.style.display==="none" && a5.style.display==="none" && a6.style.display==="none"){
         if(click.style.display==="none"){
             click.style.display="block";
         }
@@ -66,12 +80,13 @@ function showTriceps(){
     
 function showAbs(){
     var click=document.getElementById("drop-content6");
-    var a1=document.getElementById("drop-content2");
-    var a2=document.getElementById("drop-content3");
-    var a3=document.getElementById("drop-content1");
+    var a1=document.getElementById("drop-content1");
+    var a2=document.getElementById("drop-content2");
+    var a3=document.getElementById("drop-content3");
     var a4=document.getElementById("drop-content4");
     var a5=document.getElementById("drop-content5");
-    if(a1.style.display==="none" && a2.style.display==="none" && a3.style.display==="none" && a4.style.display==="none" && a5.style.display==="none"){
+    var a6=document.getElementById("drop-content7");
+    if(a1.style.display==="none" && a2.style.display==="none" && a3.style.display==="none" && a4.style.display==="none" && a5.style.display==="none" && a6.style.display==="none"){
         if(click.style.display==="none"){
             click.style.display="block";
         }
@@ -80,11 +95,14 @@ function showAbs(){
 }
     
 function showLegs(){
-    var click=document.getElementById("drop-content4");
-    var a1=document.getElementById("drop-content2");
-    var a2=document.getElementById("drop-content3");
-    var a3=document.getElementById("drop-content1");
-    if(a1.style.display==="none" && a2.style.display==="none" && a3.style.display==="none"){
+    var click=document.getElementById("drop-content7");
+    var a1=document.getElementById("drop-content1");
+    var a2=document.getElementById("drop-content2");
+    var a3=document.getElementById("drop-content3");
+    var a4=document.getElementById("drop-content4");
+    var a5=document.getElementById("drop-content5");
+    var a6=document.getElementById("drop-content6");
+    if(a1.style.display==="none" && a2.style.display==="none" && a3.style.display==="none" && a4.style.display==="none" && a5.style.display==="none" && a6.style.display==="none"){
         if(click.style.display==="none"){
             click.style.display="block";
         }
