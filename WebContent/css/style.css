@@ -25,7 +25,6 @@ h1{
 .entry-box{
 	background-color: #9c9d80;
 	border: 5px solid grey;
-	margin: auto;
 	margin-top:200px;
 	width: 600px;
 	text-align:center;
@@ -50,7 +49,7 @@ h1{
 	padding:7px;
 }
 
-.register{
+.registerDB{
 	background-color: #9c9d80;
 	border: 5px solid grey;
 	margin-left:500px;

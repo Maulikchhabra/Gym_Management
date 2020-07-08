@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Pump Place Login</title>
+<title>Machinery maintenance</title>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/style.css" /> 
 </head>
 <body style="background-image: url(images/back.jpg);">
@@ -18,21 +18,16 @@
       
     <div class="entry-box">
       
-       <form action="loginDB.jsp"  method="post">
+       <form action="reportDB.jsp"  method="post">
        
-         <p>Enter your username :</p> 
-         <input type="text" name="username">
-         <p>Enter your password :</p>
-         <input type="text" name="password">
+         <p>Enter the type of machine damaged :</p> 
+         <input type="text" name="mtype">
+         <p>Enter machine's code :</p>
+         <input type="text" name="code">
          <br><br>
          <input type="submit">
        </form>  
        
-         <div class="register">
-         <p>New to the site, Register :</p>
-         <a href="register.jsp"><button>Register</button></a>
-         </div>
-      
     </div>
     
 </body>

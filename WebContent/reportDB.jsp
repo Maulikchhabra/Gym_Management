@@ -10,12 +10,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Register</title>
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/style.css" />
+<title>Machine maintenance</title>
 </head>
 <body>
 
-<%! //DECLARATION TAG
+   <div class="heading">
+        
+        <h1>Pump Place</h1>
+        
+    </div>
+
+
+  <%! //DECLARATION TAG
    
      Connection con =null;     
      PreparedStatement pst =null;
@@ -28,18 +34,16 @@
      String pass="3780";
 
     //SQL Queries to be implemented
-    String query="insert into users values(?,?,?)"; //insert values
+    String query="insert into damaged values (?,?)"; //insert values
             
   %>
   
   <%
    //getting parameters 
-    String username = request.getParameter("username"); 
-    String password = request.getParameter("password");
-    String email = request.getParameter("email");
-   
-    System.out.println(username +" "+password+" "+email);
-  
+    String mtype = request.getParameter("mtype"); 
+    String code = request.getParameter("code");
+    
+    
    
    //Initializations =
   
@@ -49,21 +53,11 @@
   
    //Query initializations
    pst = con.prepareStatement(query);
-   pst.setString(1, username);
-   pst.setString(2, password);
-   pst.setString(3,email);
+   pst.setString(1, mtype);
+   pst.setString(2, code);
    pst.executeUpdate();
   
   %>
-  
-  <div class="registerDB">
-     <%
-      out.println(username + " has been successfully registered.<br>");
-      out.println("Kindly login to the site<br>");
-      out.println("<a href='login.jsp'><button class='proceedbtn2'>Proceed to login page</button></a>");
-     %>
-  
-  </div>
   
   
 </body>
