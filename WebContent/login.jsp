@@ -22,6 +22,7 @@
        
          <p>Enter your username :</p> 
          <input type="text" name="username">
+         <br>
          <p>Enter your password :</p>
          <input type="text" name="password">
          <br><br>

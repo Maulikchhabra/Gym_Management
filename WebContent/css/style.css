@@ -25,10 +25,11 @@ h1{
 .entry-box{
 	background-color: #9c9d80;
 	border: 5px solid grey;
+	margin:auto;
 	margin-top:200px;
 	width: 600px;
 	text-align:center;
-	padding: 10px;
+	padding: 20px;
 	border-radius: 50px;
 }
 
@@ -64,4 +65,16 @@ h1{
 .proceedbtn2{
 	width:150px;
 	padding:7px;
+}
+
+.reportDB{
+	background-color: #9c9d80;
+	border: 5px solid grey;
+	margin-left:500px;
+	margin-top:200px;
+	width: 600px;
+	text-align:center;
+	padding: 10px;
+	border-radius: 20px;
+	height:400px;
 }

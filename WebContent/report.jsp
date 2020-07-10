@@ -9,7 +9,7 @@
 <title>Machinery maintenance</title>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/style.css" /> 
 </head>
-<body style="background-image: url(images/back.jpg);">
+<body style="background-image: url(images/back2.jpg);">
 
     <div class="heading">
     

@@ -11,8 +11,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Machine maintenance</title>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/style.css" /> 
 </head>
-<body>
+<body style="background-image: url(images/back2.jpg);">
 
    <div class="heading">
         
@@ -58,6 +59,14 @@
    pst.executeUpdate();
   
   %>
+  
+  <div class="reportDB">
+     <%
+      out.println("Machinery Issue has been registered successfully.<br>");
+      out.println("<a href='dashboard.html'><button class='proceedbtn2'>Proceed to dashboard</button></a>");
+     %>
+  
+  </div>
   
   
 </body>
