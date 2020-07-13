@@ -21,11 +21,11 @@
        <form action="reportDB.jsp"  method="post">
        
          <p>Enter the type of machine damaged :</p> 
-         <input type="text" name="mtype">
+         <input type="text" name="mtype" autofocus>
          <p>Enter machine's code :</p>
-         <input type="text" name="code">
+         <input type="text" name="code" autofocus>
          <br><br>
-         <input type="submit">
+         <input type="submit" id="btn">
        </form>  
        
     </div>

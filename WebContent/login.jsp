@@ -21,17 +21,18 @@
        <form action="loginDB.jsp"  method="post">
        
          <p>Enter your username :</p> 
-         <input type="text" name="username">
-         <br>
-         <p>Enter your password :</p>
-         <input type="text" name="password">
+         <input type="text" name="username" autofocus>
          <br><br>
-         <input type="submit">
+         <p>Enter your password :</p>
+         <input type="text" name="password" autofocus>
+         <br><br>
+         <input type="submit" id="btn">
        </form>  
        
          <div class="register">
-         <p>New to the site, Register :</p>
-         <a href="register.jsp"><button>Register</button></a>
+           <br>
+           <p>New to the site, Register :</p><br>
+           <a href="register.jsp"><button id="btn">Register</button></a>
          </div>
       
     </div>

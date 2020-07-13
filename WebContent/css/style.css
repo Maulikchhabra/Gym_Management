@@ -22,6 +22,17 @@ h1{
 	padding: 12px;
 }
 
+#btn{
+	padding:5px;
+	width:150px;
+	
+}
+
+p{
+	font-size:15px;
+	padding:7px;
+}
+
 .entry-box{
 	background-color: #9c9d80;
 	border: 5px solid grey;

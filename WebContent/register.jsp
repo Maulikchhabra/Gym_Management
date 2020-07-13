@@ -23,13 +23,13 @@
        <form action="registerDB.jsp"  method="post">
        
          <p>Enter your name :</p>
-         <input type="text" name="username">
+         <input type="text" name="username" autofocus>
          <p>Enter a password :</p>
-         <input type="password" name="password">
+         <input type="password" name="password" autofocus>
          <p>Enter email address :</p>
-         <input type="text" name="email">
+         <input type="text" name="email" autofocus>
          <br><br>
-         <input type="submit">
+         <input type="submit" id="btn">
        </form>  
      </div>
      
