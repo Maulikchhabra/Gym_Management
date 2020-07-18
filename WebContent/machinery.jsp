@@ -23,16 +23,18 @@
 
 <%! //DECLARATION TAG
    
-     Connection con =null;     
+     Connection con1 =null,con2=null,con3=null,con4=null;     
      PreparedStatement pst =null;
-     Statement st =null;
-     ResultSet rs1 = null;
-     ResultSet rs2 = null;
+     Statement st1 =null,st2=null,st3=null,st4=null;
+     
+     //Result sets for the queries
+     ResultSet rs1 = null,rs2=null,rs3=null,rs4=null;
+     
    
      //Login to database details   
      String url ="jdbc:mysql://localhost:3306/pumphouse";
-     String uname="root";
-     String pass="3780";
+     String uname= "root";
+     String pass= "3780";
 
     //SQL Queries to be implemented
     
@@ -48,18 +50,73 @@
   
    //1.General initializations
    Class.forName("com.mysql.jdbc.Driver"); //class forname
-   con = DriverManager.getConnection(url, uname, pass);
+   con1 = DriverManager.getConnection(url, uname, pass);
+   con2 = DriverManager.getConnection(url, uname, pass);
+   con3 = DriverManager.getConnection(url, uname, pass);
+   con4 = DriverManager.getConnection(url, uname, pass);
   
    
   
-   //Query2 initializations
-   st = con.createStatement();
-   rs1 =st.executeQuery(query1);
+   //Query initializations
+   st1 = con1.createStatement();
+   st2 = con2.createStatement();
+   st3 = con3.createStatement();
+   st4 = con4.createStatement();
+   rs1 = st1.executeQuery(query1);
+   rs2 = st2.executeQuery(query2);
+   rs3 = st3.executeQuery(query3);
+   rs4 = st4.executeQuery(query4);
   
 %>
 
+<div class="dumbells">
+  <details>
+  
+     <summary>Dumbells</summary>
+     <table style="width:50%">
+      <tr>
+         <th>Equipment ID</th>
+         <th>Category</th>
+         <th>Kilograms</th>
+         <th>Pairs</th>
+      </tr>
+      <br>
+      <%
+       while(rs2.next()){
+            out.println("<tr><td>&emsp;&emsp;&emsp;&emsp;"+rs2.getString(1)+"</td><td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"+rs2.getString(2)+"</td><td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"+rs2.getInt(3)+"</td><td>&emsp;&emsp;&emsp;"+rs2.getInt(4)+"</td></tr><br>");    
+   	 
+		}
+	%>
+   </table>
+ </details>
+    
+</div>
 
-<div class="proceed">
+<div class="rods">
+  <details>
+  
+     <summary>Rods</summary>
+     <table style="width:50%">
+      <tr>
+         <th>Equipment ID</th>
+         <th>Category</th>
+         <th>Kilograms</th>
+         <th>Quantity</th>
+      </tr>
+      <br>
+      <%
+       while(rs4.next()){
+            out.println("<tr><td>&emsp;&emsp;&emsp;&emsp;"+rs4.getString(1)+"</td><td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"+rs4.getString(2)+"</td><td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"+rs4.getInt(3)+"</td><td>&emsp;&emsp;&emsp;"+rs4.getInt(4)+"</td></tr><br>");    
+   	 
+		}
+	%>
+   </table>
+ </details>
+    
+</div>
+
+
+<div class="machines">
   <details>
   
      <summary>Big Machines</summary>
@@ -67,7 +124,7 @@
       <tr>
          <th>Equipment ID</th>
          <th>Equipment</th>
-         <th>Pairs / Quantity</th>
+         <th>Quantity</th>
       </tr>
       <br>
       <%
@@ -77,9 +134,30 @@
 		}
 	%>
    </table>
-</details>
+ </details>
     
 </div>
 
+<div class="others">
+  <details>
+  
+     <summary>Other Equipments</summary>
+     <table style="width:50%">
+      <tr>
+         <th>Equipment ID</th>
+         <th>Equipment name</th>
+         <th>Quantity</th>
+      </tr>
+      <br>
+      <%
+       while(rs3.next()){
+            out.println("<tr><td>&emsp;&emsp;&emsp;&emsp;"+rs3.getString(1)+"</td><td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"+rs3.getString(2)+"</td><td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"+rs3.getInt(3)+"</td></tr><br>");    
+   	 
+		}
+	%>
+   </table>
+ </details>
+    
+</div>
 </body>
 </html>
