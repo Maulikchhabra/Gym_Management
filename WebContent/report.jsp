@@ -20,13 +20,26 @@
       
        <form action="reportDB.jsp"  method="post">
        
-         <p>Enter the type of machine damaged :</p> 
-         <input type="text" name="mtype" autofocus>
+       <p>Enter the category of machine damaged :</p> 
+       
+         <select name="category" id="category" placeholder="select category type">
+             <option value="dumbells">Dumbells</option>
+             <option value="rods">Rods</option>
+             <option value="machines">Big Machines</option>
+             <option value="other">Other</option>
+        </select>
+         
+         
          <p>Enter machine's code :</p>
          <input type="text" name="code" autofocus>
          <br><br>
          <input type="submit" id="btn">
        </form>  
+       <br>
+       
+       <div class="alldamaged">
+           <a href="viewDamaged.jsp"><button id="btnAll">View all damaged equipments</button></a>
+       </div>
        
     </div>
     

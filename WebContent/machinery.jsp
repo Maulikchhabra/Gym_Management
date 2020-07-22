@@ -72,7 +72,7 @@
 <div class="dumbells">
   <details>
   
-     <summary>Dumbells</summary>
+     <summary style="width:40%">Dumbells</summary>
      <table style="width:50%">
       <tr>
          <th>Equipment ID</th>
@@ -95,7 +95,7 @@
 <div class="rods">
   <details>
   
-     <summary>Rods</summary>
+     <summary style="width:40%">Rods</summary>
      <table style="width:50%">
       <tr>
          <th>Equipment ID</th>
@@ -103,7 +103,6 @@
          <th>Kilograms</th>
          <th>Quantity</th>
       </tr>
-      <br>
       <%
        while(rs4.next()){
             out.println("<tr><td>&emsp;&emsp;&emsp;&emsp;"+rs4.getString(1)+"</td><td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"+rs4.getString(2)+"</td><td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"+rs4.getInt(3)+"</td><td>&emsp;&emsp;&emsp;"+rs4.getInt(4)+"</td></tr><br>");    
@@ -119,14 +118,13 @@
 <div class="machines">
   <details>
   
-     <summary>Big Machines</summary>
+     <summary style="width:40%">Big Machines</summary>
      <table style="width:50%">
       <tr>
          <th>Equipment ID</th>
          <th>Equipment</th>
          <th>Quantity</th>
       </tr>
-      <br>
       <%
        while(rs1.next()){
             out.println("<tr><td>&emsp;&emsp;&emsp;&emsp;"+rs1.getString(1)+"</td><td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"+rs1.getString(2)+"</td><td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"+rs1.getInt(3)+"</td></tr><br>");    
@@ -141,14 +139,13 @@
 <div class="others">
   <details>
   
-     <summary>Other Equipments</summary>
+     <summary style="width:40%">Other Equipments</summary>
      <table style="width:50%">
       <tr>
          <th>Equipment ID</th>
          <th>Equipment name</th>
          <th>Quantity</th>
       </tr>
-      <br>
       <%
        while(rs3.next()){
             out.println("<tr><td>&emsp;&emsp;&emsp;&emsp;"+rs3.getString(1)+"</td><td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"+rs3.getString(2)+"</td><td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"+rs3.getInt(3)+"</td></tr><br>");    
@@ -159,5 +156,7 @@
  </details>
     
 </div>
+
+<img alt="machine" src="images/machine.svg" id="machineimg">
 </body>
 </html>

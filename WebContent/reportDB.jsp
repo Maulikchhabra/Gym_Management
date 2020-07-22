@@ -25,7 +25,7 @@
   <%! //DECLARATION TAG
    
      Connection con =null;     
-     PreparedStatement pst =null;
+     PreparedStatement pst1 =null,pst2=null;
      Statement st =null;
      ResultSet rs = null;
    
@@ -35,17 +35,18 @@
      String pass="3780";
 
     //SQL Queries to be implemented
-    String query="insert into damaged values (?,?)"; //insert values
+    String query1="insert into damaged values (?,?)"; //insert values
+    String query2="update machine set pairs=pairs-1 where category=? and machineID=?";
             
   %>
   
   <%
    //getting parameters 
-    String mtype = request.getParameter("mtype"); 
+    String mtype = request.getParameter("category"); 
     String code = request.getParameter("code");
     
+    System.out.print(mtype+code);
     
-   
    //Initializations =
   
    //1.General initializations
@@ -53,20 +54,28 @@
    con = DriverManager.getConnection(url, uname, pass);
   
    //Query initializations
-   pst = con.prepareStatement(query);
-   pst.setString(1, mtype);
-   pst.setString(2, code);
-   pst.executeUpdate();
-  
+   pst1 = con.prepareStatement(query1);
+   pst2 = con.prepareStatement(query2);
+   pst1.setString(1, mtype);
+   pst1.setString(2, code);
+   pst2.setString(1,mtype);
+   pst2.setString(2,code);
+   pst1.executeUpdate();
+   int i=pst2.executeUpdate();
+
+   System.out.println(i);
   %>
   
-  <div class="reportDB">
+<div class="reportDB">
+  
+  <div class="inner">  
      <%
       out.println("Machinery Issue has been registered successfully.<br>");
-      out.println("<a href='dashboard.html'><button class='proceedbtn2'>Proceed to dashboard</button></a>");
+     
+      out.println("<br><a href='dashboard.html'><button class='proceedbtn2'>Proceed to dashboard</button></a>");
      %>
-  
   </div>
+</div>
   
   
 </body>

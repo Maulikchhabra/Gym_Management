@@ -82,10 +82,15 @@ p{
 	background-color: #9c9d80;
 	border: 5px solid grey;
 	margin-left:500px;
-	margin-top:200px;
-	width: 600px;
+	margin-top:150px;
+	width: 550px;
 	text-align:center;
 	padding: 10px;
 	border-radius: 20px;
-	height:400px;
+	height:250px;
+}
+
+.inner{
+	display:block;
+	margin:auto;
 }

@@ -94,6 +94,24 @@ table, th, td {
 }
 
 summary{
-	display:block;
-	margin:auto;
+	margin-top:100px;
+	margin-left:200px;
+}
+
+.dumbells{
+	margin-top:100px;
+	margin-left:140px;
+}
+
+.rods, .machines, .others{
+	margin-top:40px;
+	margin-left:140px;
+}
+
+#machineimg{
+	float:right;
+	margin-right:150px;
+	height:400px;
+	width:350px;
+	margin-bottom:300px;
 }
